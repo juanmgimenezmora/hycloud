@@ -1,0 +1,14 @@
+{
+  "name": "precios",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/precios.js"
+  },
+  "dependencies": {
+    "aws-sdk": "*",
+    "mariasql": "*",
+    "debug": "~2.2.0",
+    "async" : "*"
+  }
+}

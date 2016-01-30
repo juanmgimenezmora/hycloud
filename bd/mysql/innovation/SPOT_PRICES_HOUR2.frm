@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `innovation`.`SPOT_PRICES`.`InstanceType` AS `InstanceType`,`innovation`.`SPOT_PRICES`.`ProductDescription` AS `ProductDescription`,str_to_date(`innovation`.`SPOT_PRICES`.`Timestamp`,\'%Y-%m-%d %H\') AS `TimestampHour`,min(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceMin`,max(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceMax`,avg(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceAvg` from `innovation`.`SPOT_PRICES` group by `innovation`.`SPOT_PRICES`.`InstanceType`,`innovation`.`SPOT_PRICES`.`ProductDescription`,str_to_date(`innovation`.`SPOT_PRICES`.`Timestamp`,\'%Y-%m-%d %H\'))
+md5=9f9a0fcafd4540781ac43dd0709d1c5b
+updatable=0
+algorithm=0
+definer_user=mysql
+definer_host=%
+suid=2
+with_check_option=0
+timestamp=2016-01-21 17:58:49
+create-version=2
+source=(\nSELECT InstanceType, ProductDescription, STR_TO_DATE(Timestamp, \'%Y-%m-%d %H\') as TimestampHour, min(SpotPrice) as SpotPriceMin, max(SpotPrice) SpotPriceMax, avg(SpotPrice) SpotPriceAvg \nFROM SPOT_PRICES\ngroup by InstanceType, ProductDescription, STR_TO_DATE(Timestamp, \'%Y-%m-%d %H\')\n)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `innovation`.`SPOT_PRICES`.`InstanceType` AS `InstanceType`,`innovation`.`SPOT_PRICES`.`ProductDescription` AS `ProductDescription`,str_to_date(`innovation`.`SPOT_PRICES`.`Timestamp`,\'%Y-%m-%d %H\') AS `TimestampHour`,min(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceMin`,max(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceMax`,avg(`innovation`.`SPOT_PRICES`.`SpotPrice`) AS `SpotPriceAvg` from `innovation`.`SPOT_PRICES` group by `innovation`.`SPOT_PRICES`.`InstanceType`,`innovation`.`SPOT_PRICES`.`ProductDescription`,str_to_date(`innovation`.`SPOT_PRICES`.`Timestamp`,\'%Y-%m-%d %H\'))
+mariadb-version=100023

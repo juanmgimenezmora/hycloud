@@ -1,0 +1,3 @@
+- El script de bbdd se ha generado con un minimo para funcionar, el tamaño de los campos esta sobredimensionado.
+- No se han creado indices.
+- Falta incluir el usuario test de prueba en el script (para desarrollo)
