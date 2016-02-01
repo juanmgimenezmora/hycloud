@@ -10,7 +10,7 @@ CREATE TABLE `USERS` (
 PRIMARY KEY (`login`)
 );
 
-INSERT INTO USERS (`accessKeyId`,`secretAccessKey`,`region`,`nombre`,`login`,`password`) VALUES ('AKIAI2OVVYQLA2G4KHUA','SHOLgvCtFH8wIv+GUW/J+rbcX+fNOXxVJ6JVPMi/','eu-west-1','HICLOUD_USER','HUSER','HPASSW');
+INSERT INTO USERS (`accessKeyId`,`secretAccessKey`,`region`,`nombre`,`login`,`password`) VALUES ('XXXXX','XXXXXX','eu-west-1','HICLOUD_USER','HUSER','HPASSW');
 
 
 DROP TABLE IF EXISTS SPOT_PRICES;
